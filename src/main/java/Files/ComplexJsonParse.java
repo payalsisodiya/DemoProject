@@ -1,5 +1,7 @@
 package Files;
 
+import io.restassured.internal.path.json.mapping.JsonObjectDeserializer;
+
 import io.restassured.path.json.JsonPath;
 
 public class ComplexJsonParse {
@@ -9,6 +11,7 @@ public class ComplexJsonParse {
 
         //Print No of courses returned by API
         int count = js.getInt("courses.size()");
+
         System.out.println(count);
 
         //Print Purchase amount
